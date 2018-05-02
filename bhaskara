@@ -1,0 +1,17 @@
+@ -0,0 +1,17 @@
+input("Bem vindo ao calculador de Bhaskara")
+print ('{}x²'.format(a))
+b = int(input('qual o valor de b?'))
+print ('{}x²+{}x'.format(a,b))
+c = int(input('qual o valor de c?'))
+print ('{}x²+{}x+{}'.format(a,b,c))
+y = (-b +0)/2*a
+delta = (b**2 - 4 * a * c)
+if delta < 0:
+    print('esta equação não possui resultados reais')
+if delta == 0:
+    print('esta equação possui apenas um resultado, o {}'.format(y))
+if delta > 0:
+    x1 = (-b + delta**(1/2) /(2*a))
+    x2 = (-b - delta**(1/2) /(2*a))
+    print('esta equação possui dois resultados reais, o {} e o {}'.format(x1,x2))
